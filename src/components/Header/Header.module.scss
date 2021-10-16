@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTitle {
+  font-size: 2rem;
+}
+
+.headerCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
