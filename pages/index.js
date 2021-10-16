@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Next.js!</h1>
+        <h1 className={styles.title}>Sumayya's Shoez Store</h1>
 
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.js</code>
