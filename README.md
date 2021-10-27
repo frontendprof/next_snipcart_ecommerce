@@ -9,3 +9,9 @@
 4. Fuse.js is fuzzy search library
 
 ==============================================
+
+### Initial Setup
+
+1. npx create-next-app
+2. installing dependencies
+3. ...
