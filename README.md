@@ -15,3 +15,5 @@
 1. npx create-next-app
 2. installing dependencies
 3. ...
+4. CSS Grid
+5. Button Component
