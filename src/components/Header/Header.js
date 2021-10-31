@@ -9,8 +9,10 @@ const Header = () => {
       <Container className={s.headerContainer}>
         <p className={s.headerTitle}>Sumayya&apos;s Shoez Store</p>
         <p className={s.headerCart}>
-          <FaShoppingCart />
-          $0.00
+          <button className="snipcart-checkout">
+            <FaShoppingCart />
+            <span className="snipcart-total-price">$$$</span>
+          </button>
         </p>
       </Container>
     </header>
