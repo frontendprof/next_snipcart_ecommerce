@@ -1,9 +1,12 @@
 import Head from 'next/head';
-// import Image from 'next/image';
+import Image from 'next/image';
 import Header from '@components/Header';
 import Container from '@components/Container';
+import Button from '@components/Button';
 
 import s from '@styles/Home.module.scss';
+
+import products from '@data/products.json';
 
 export default function Home() {
   return (
@@ -20,46 +23,25 @@ export default function Home() {
           <h1>Hyper Bros Trading Cards</h1>
           <h2>Available Products</h2>
           <ul className={s.products}>
-            <li>
-              <img src="/images/bowser-holo.jpg" alt="product_image" />
-              <h3>Bowser Holographic</h3>
-              <p>$99.99</p>
-              <p>
-                <button>Add to Cart</button>
-              </p>
-            </li>
-
-            <li>
-              <img src="/images/hammer.jpg" alt="product_image" />
-              <h3>Hammer</h3>
-              <p>$79.99</p>
-              <p>
-                <button>Add to Cart</button>
-              </p>
-            </li>
-
-            <li>
-              <img src="/images/luigi.jpg" alt="product_image" />
-              <h3>Luigi</h3>
-              <p>$69.99</p>
-              <p>
-                <button>Add to Cart</button>
-              </p>
-            </li>
-
-            <li>
-              <img src="/images/mario.jpg" alt="product_image" />
-              <h3>Mario</h3>
-              <p>$49.99</p>
-              <p>
-                <button>Add to Cart</button>
-              </p>
-            </li>
+            {products.map((pr) => {
+              return (
+                <li key={pr.id}>
+                  <Image width={864} height={1200} src={pr.image} alt={`Card of ${pr.title}`} />
+                  <h3 className={s.productTitle}>{pr.title}</h3>
+                  <p className={s.productPrice}>{pr.price}</p>
+                  <p>
+                    <Button>Add to Cart</Button>
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </Container>
       </main>
 
-      <footer className={s.footer}>&copy; Sumayya's Shoez Store {new Date().getFullYear()}</footer>
+      <footer className={s.footer}>
+        &copy; Sumayya&apos;s Shoez Store {new Date().getFullYear()}
+      </footer>
     </div>
   );
 }

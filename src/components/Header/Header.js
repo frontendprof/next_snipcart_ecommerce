@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={s.header}>
       <Container className={s.headerContainer}>
-        <p className={s.headerTitle}>Sumayya's Shoez Store</p>
+        <p className={s.headerTitle}>Sumayya&apos;s Shoez Store</p>
         <p className={s.headerCart}>
           <FaShoppingCart />
           $0.00
