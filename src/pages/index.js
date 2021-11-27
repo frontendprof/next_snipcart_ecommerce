@@ -114,7 +114,6 @@ export async function getStaticProps() {
     };
     return data;
   });
-  console.log(products.slug);
   return {
     props: {
       products,
