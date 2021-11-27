@@ -17,3 +17,4 @@
 3. ...
 4. CSS Grid
 5. Button Component
+6. Snipcart setup and environment variables
