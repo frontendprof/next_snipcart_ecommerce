@@ -6,8 +6,6 @@ import Button from '@components/Button';
 import Script from 'next/script';
 
 import s from '@styles/Home.module.scss';
-
-// import products from '@data/products.json';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 export default function Home({ products }) {
